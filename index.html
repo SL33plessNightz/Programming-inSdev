@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>pf maker</title>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+    <main class="profile-container">
+
+
+        <section class="profile-header">
+            <h1>Create Your Hero Profile</h1>
+
+
+            <p>
+                Tell your team who you are, what roles you play,
+                and which heroes you perform best with.
+            </p>
+        </section>
+
+
+
+
+        <form id="profileForm" method="POST">
+
+
+            <!-- USERNAME -->
+
+
+            <section class="form-section">
+
+
+                <h2>Player Information</h2>
+                <br>
+
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your username"
+                    maxlength="30"
+                    required
+                >
+
+
+            </section>
+
+
+
+
+            <!-- PREFERRED ROLES -->
+
+
+            <section class="form-section">
+
+
+                <h2>Preferred Roles</h2>
+
+
+                <p class="section-description">
+                    Select the roles you are comfortable playing.
+                </p>
+
+
+                <div class="role-container">
+
+
+                    <label class="role-card">
+                        <input
+                            type="checkbox"
+                            name="roles"
+                            value="Vanguard"
+                        >
+
+
+                        <span>🛡️</span>
+                        <strong>Vanguard</strong>
+                    </label>
+
+
+
+
+                    <label class="role-card">
+                        <input
+                            type="checkbox"
+                            name="roles"
+                            value="Duelist"
+                        >
+
+
+                        <span>⚔️</span>
+                        <strong>Duelist</strong>
+                    </label>
+
+
+
+
+                    <label class="role-card">
+                        <input
+                            type="checkbox"
+                            name="roles"
+                            value="Strategist"
+                        >
+
+
+                        <span>💚</span>
+                        <strong>Strategist</strong>
+                    </label>
+
+
+                </div>
+
+
+            </section>
+
+
+
+
+            <!-- TOP 4 HEROES -->
+
+
+            <section class="form-section">
+
+
+                <h2>Your Top 4 Heroes</h2>
+
+                <!--Im gonna figure out how to make a large selection menu here later-->
+                <p class="section-description">
+                    Select the four heroes you perform best with.
+                </p>
+
+
+                <div class="Superhero-grid">
+
+                    <label class="firstcard">
+
+
+                        <input
+                            type="checkbox"
+                            name="heroes"
+                            value="Spider-Man"
+                        >
+
+
+                        <img
+                            src="heroicons/spidermanicon.png"
+                            alt="Spider-Man"
+                        >
+
+
+                        <div class="hero-name">
+                            Spider-Man
+                        </div>
+
+
+                    </label>
+                    <label class="firstcard">
+
+
+                        <input
+                            type="checkbox"
+                            name="heroes"
+                            value="Magik"
+                        >
+
+
+                        <img
+                            src="heroicons/magikicon.png"
+                            alt="Magik"
+                        >
+
+
+                        <div class="hero-name">
+                            Magik
+                        </div>
+
+
+                    </label>
+                    <label class="firstcard">
+
+
+                        <input
+                            type="checkbox"
+                            name="heroes"
+                            value="Star-Lord"
+                        >
+
+
+                        <img
+                            src="heroicons/starlordicon.png"
+                            alt="Star-Lord"
+                        >
+
+
+                        <div class="hero-name">
+                            Star-Lord
+                        </div>
+
+
+                    </label>
+
+
+
+
+                    <!-- HERO -->
+
+
+                    <label class="firstcard">
+
+
+                        <input
+                            type="checkbox"
+                            name="heroes"
+                            value="Mantis"
+                        >
+
+
+                        <img
+                            src="heroicons/mantisicon.png"
+                            alt="Mantis"
+                        >
+
+
+                        <div class="hero-name">
+                            Mantis
+                        </div>
+
+
+                    </label>
+
+
+                </div>
+
+
+            </section>
+
+            <section class="form-section">
+
+
+                <h2>About Your Playstyle</h2>
+
+
+                <p class="section-description">
+                    Tell your team anything they should know about your playstyle.
+                </p>
+
+
+                <textarea
+                    id="description"
+                    name="description"
+                    maxlength="500"
+                    placeholder="Example: I usually play aggressive Duelists but can flex to Strategist when needed..."
+                ></textarea>
+
+
+            </section>
+
+            <button
+                type="submit"
+                class="create-profile-button"
+            >
+                Create Profile
+            </button>
+
+
+        </form>
+
+
+    </main>
+
+
+</body>
+</html>
+
